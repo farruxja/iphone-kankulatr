@@ -1,0 +1,108 @@
+/* style.css */
+
+body {
+    font-family: 'San Francisco';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 200px;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px ;
+}
+.head__wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px ;
+    margin-bottom: 10px;
+}
+
+.wrap{
+
+    display: flex;
+    align-items: center;
+    gap: 10px ;
+    margin-bottom: 10px ;
+}
+#display {
+    grid-column: span 4;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+    color: white;
+    font-size: 6em;
+    font-weight: 700;
+    margin-right: 150px ;
+   
+    background-color: black;
+}
+
+button {
+    font-size: 3em;
+    width: 100px;
+    height: 100px;
+
+    padding: 3px;
+    color: white;
+
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(64, 63, 63);
+   
+    cursor: pointer;
+}
+
+button:active  {
+    background-color: gray;
+}
+
+button[data-value="C"] {
+    font-size: 3em;
+    width: 100px;
+    height: 100px;
+
+    padding: 3px;
+
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(64, 63, 63);
+   
+    cursor: pointer;
+}
+
+button[data-value="C"]:active {
+    background-color: gray;
+}
+
+button[data-value="="] {
+    background-color: #2ed573;
+    color: #fff;
+    grid-column: span 2;
+}
+
+button[data-value="="]:hover {
+    background-color: #1e824c;
+}
+.head__wrap button{
+    background-color: rgb(159, 155, 155);
+    color: black;
+}
+
+.sariq button{
+    margin-bottom: 10px ;
+    background-color: rgb(252, 174, 6);
+    
+}
+
+
